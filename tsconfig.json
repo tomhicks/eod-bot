@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020", // Target modern JavaScript
+    "module": "ESNext", // Use ESNext module system
+    "strict": true, // Enable all strict type-checking options
+    "esModuleInterop": true, // Enable interoperability between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Ensure consistent casing in imports
+    "skipLibCheck": true, // Skip type checking of declaration files
+    "moduleResolution": "node", // Use Node.js module resolution
+    "resolveJsonModule": true, // Allow importing .json files
+    "isolatedModules": true, // Ensure each file can be safely transpiled without relying on other imports
+    "noEmit": true, // Do not emit outputs, only type-check
+    "allowJs": true, // Allow JavaScript files to be compiled
+    "checkJs": true, // Type-check JavaScript files
+    "lib": ["ES2020"], // Include the necessary library files
+    "types": ["node"] // Include type definitions for Node.js
+  },
+  "include": ["src/**/*"], // Include all TypeScript files in the src directory
+  "exclude": ["node_modules", "**/*.spec.ts"] // Exclude node_modules and test files
+}

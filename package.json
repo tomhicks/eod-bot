@@ -1,0 +1,29 @@
+{
+  "name": "your-project-name",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A project using various SDKs and APIs",
+  "main": "dist/index.js",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.17.1",
+    "@linear/sdk": "^13.0.0",
+    "@octokit/graphql": "^7.0.0",
+    "@octokit/rest": "^20.0.0",
+    "dotenv": "^16.0.0",
+    "googleapis": "^131.0.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "gen-random-date": "bun run src/scripts/runRandomDate.ts",
+    "gen-yesterday": "bun run src/scripts/runYesterday.ts",
+    "gen-today": "bun run src/scripts/runToday.ts"
+  },
+  "keywords": [],
+  "author": "Your Name",
+  "license": "ISC"
+}
